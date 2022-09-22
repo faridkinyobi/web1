@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <header id="HOME">
+        <h1 class="logo">Logo</h1>
+        <nav>
+            <ul>
+                <li><a href="#HOME">HOME</a></li>
+                <li><a href="#JASA">JASA</a></li>
+                <li><a href="#">KONTAK</a></li>
+            </ul>
+        </nav>
+        <div class="bul">
+            <i class="uil uil-moon"></i>
+        </div>
+        <div class="mode">
+            <div class="mode-toggle">
+                <input type="checkbox">
+            </div>
+        </div>
+        
+    </header>
+    <div class="container" >
+        <div class="intro " >
+            <p class="title">Hello  &#128075 </p>
+            <p class="my"> My Name is </p>
+            <p class="nama">M Farid Kinyobi Akbar</p>
+            <p class="disc">Technology Enthusiasts From The Village.</p>
+            <div class="but">
+               <button class="cv" onclick="alert('maaf cv masih kosong')">Download Cv</button> 
+               <button class="cv"onclick="redirInstagram()" >Follow Saya</button>
+            </div>
+        </div>
+        <img src="asset/img/designer.png" alt="farid foto 1"  class="img-prof"id="container">
+    </div>
+    <div class="parallax">
+        <div class="tentang">
+            <p class="abo">Saya Seorang Progamer </p>
+            <p class="abo">Coba Aja Dulu Mungkin Tertarik</p>
+            <div class="btn">
+                 <button class="cv" onclick="redirWhatsap()">Mari Kerja Sama</button>
+            </div>
+        </div>
+        <div class="container-js"id="JASA">
+           <div class="card ">
+            <div class="card-itm-1">
+                <img src="asset/img/dashboard1.ico" alt="#128075" class="icon">
+                <p class="abo">Full Pelayanan</p>
+                <p>Melayani adalah tugas yang paling penting selagi masih bisa</p>
+            </div>
+            <div class="card-itm-2">
+                <img src="asset/img/translate2.ico" alt="#128075" class="icon">
+                <p class="abo">Inspirasi </p>
+                <p>Menjadi pengusaha adalah Inspirasi saya untuk kedepan</p>
+            </div>
+            <div class="card-itm-3">
+                <img src="asset/img/health.ico" alt="#128075" class="icon">
+                <i class="uim uim-clock-seven"></i>
+                <p class="abo">Selalu percaya</p>
+                <p>Selalu percaya bahwa usaha tidak mengianati hasil</p>
+            </div>
+           </div>
+        </div>
+        
+    </div>
+   <footer>
+            <p class="copyr">©2022 Muh Farid K.A</p>
+    </footer>
+</body>
+<script>
+    function redirInstagram() {
+        window.location.href="https://www.instagram.com/_frdknyb_"
+    }
+    function redirWhatsap() {
+        window.location.href="https://wa.me/085867342245"
+    }
+    const body =document.querySelector("body"),
+         modeToggle =body.querySelector("input[type=checkbox]");
+
+    modeToggle.addEventListener("click", () =>{
+        body.classList.toggle("dark");
+});
+var img =getElementById('container');
+var on =getElementById('onren');
+on.style.backgroundColor='yello';
+function berubah(){
+   document.body.style.background='yellow';
+}
+</script>
+</html>
